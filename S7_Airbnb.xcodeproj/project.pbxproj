@@ -15,6 +15,10 @@
 		482DB365273C2F560037A995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482DB363273C2F560037A995 /* LaunchScreen.storyboard */; };
 		482DB36D273C3C240037A995 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482DB36C273C3C240037A995 /* WishListViewController.swift */; };
 		482DB36F273C5E000037A995 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482DB36E273C5E000037A995 /* InboxViewController.swift */; };
+		B82FB052274FD119006334C2 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82FB051274FD119006334C2 /* ExploreViewController.swift */; };
+		B82FB054274FD18B006334C2 /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82FB053274FD18B006334C2 /* ExploreTableViewCell.swift */; };
+		B82FB056274FE5E4006334C2 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82FB055274FE5E4006334C2 /* Place.swift */; };
+		B82FB058274FE6AB006334C2 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82FB057274FE6AB006334C2 /* PlaceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		482DB366273C2F560037A995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		482DB36C273C3C240037A995 /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
 		482DB36E273C5E000037A995 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		B82FB051274FD119006334C2 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		B82FB053274FD18B006334C2 /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
+		B82FB055274FE5E4006334C2 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		B82FB057274FE6AB006334C2 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +68,69 @@
 		482DB357273C2F520037A995 /* S7_Airbnb */ = {
 			isa = PBXGroup;
 			children = (
+				B82FB04B274FADD3006334C2 /* Main */,
 				482DB358273C2F520037A995 /* AppDelegate.swift */,
 				482DB35A273C2F520037A995 /* SceneDelegate.swift */,
-				482DB35C273C2F520037A995 /* ViewController.swift */,
-				482DB35E273C2F520037A995 /* Main.storyboard */,
 				482DB361273C2F560037A995 /* Assets.xcassets */,
 				482DB363273C2F560037A995 /* LaunchScreen.storyboard */,
 				482DB366273C2F560037A995 /* Info.plist */,
-				482DB36C273C3C240037A995 /* WishListViewController.swift */,
-				482DB36E273C5E000037A995 /* InboxViewController.swift */,
 			);
 			path = S7_Airbnb;
+			sourceTree = "<group>";
+		};
+		B82FB04B274FADD3006334C2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B82FB050274FCFAB006334C2 /* Screens */,
+				B82FB04F274FCF3C006334C2 /* Cells */,
+				B82FB04E274FCF2C006334C2 /* Model */,
+				B82FB04D274FCF0F006334C2 /* ViewModel */,
+				B82FB04C274FCEDC006334C2 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B82FB04C274FCEDC006334C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				482DB35C273C2F520037A995 /* ViewController.swift */,
+				482DB36C273C3C240037A995 /* WishListViewController.swift */,
+				482DB36E273C5E000037A995 /* InboxViewController.swift */,
+				B82FB051274FD119006334C2 /* ExploreViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B82FB04D274FCF0F006334C2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B82FB057274FE6AB006334C2 /* PlaceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B82FB04E274FCF2C006334C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B82FB055274FE5E4006334C2 /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B82FB04F274FCF3C006334C2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B82FB053274FD18B006334C2 /* ExploreTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B82FB050274FCFAB006334C2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				482DB35E273C2F520037A995 /* Main.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				482DB36F273C5E000037A995 /* InboxViewController.swift in Sources */,
+				B82FB058274FE6AB006334C2 /* PlaceViewModel.swift in Sources */,
+				B82FB052274FD119006334C2 /* ExploreViewController.swift in Sources */,
 				482DB35D273C2F520037A995 /* ViewController.swift in Sources */,
+				B82FB056274FE5E4006334C2 /* Place.swift in Sources */,
 				482DB36D273C3C240037A995 /* WishListViewController.swift in Sources */,
+				B82FB054274FD18B006334C2 /* ExploreTableViewCell.swift in Sources */,
 				482DB359273C2F520037A995 /* AppDelegate.swift in Sources */,
 				482DB35B273C2F520037A995 /* SceneDelegate.swift in Sources */,
 			);

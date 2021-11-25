@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airbnblogo" translatesAutoresizingMaskIntoConstraints="NO" id="u34-SH-vjD">
-                                <rect key="frame" x="10" y="49.5" width="394" height="797.5"/>
+                                <rect key="frame" x="10" y="268" width="394" height="360"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -36,7 +36,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="airbnblogo" width="720" height="797.5"/>
+        <image name="airbnblogo" width="640" height="360"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
