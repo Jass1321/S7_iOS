@@ -12,6 +12,12 @@ class ExploreViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var name: String? = nil
+    var address: String? = nil
+    var rating: String? = nil
+    var userRatingsTotal: String? = nil
+    var photo: String? = nil
+         
     let placeViewModel = PlaceViewModel()
     
     override func viewDidLoad() {
@@ -71,6 +77,33 @@ extension ExploreViewController:  UITableViewDelegate, UITableViewDataSource {
       
       return cell
    }
+    
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // click en una fila pa que se vaya a una pantall de detalle
+        let object = placeViewModel.arrayResults[indexPath.row]
+           
+        self.name = object.name
+        self.address = object.address
+        self.rating = String(object.rating)
+        self.userRatingsTotal = "(\(object.userRatingsTotal))"
+        self.photo = object.photo
+       
+        //print(indexPath.row)
+        self.performSegue(withIdentifier: "exploreSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "exploreSegue" {
+                if let destVC = segue.destination as? ExploreDetailViewController {
+                    destVC.name = self.name
+                    destVC.rating = self.rating
+                    destVC.address = self.address
+                    destVC.userRatingsTotal = self.userRatingsTotal
+                    destVC.photo = self.photo
+                }
+            }
+        }
         
 }
 

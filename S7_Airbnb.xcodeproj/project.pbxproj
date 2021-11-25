@@ -19,6 +19,7 @@
 		B82FB054274FD18B006334C2 /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82FB053274FD18B006334C2 /* ExploreTableViewCell.swift */; };
 		B82FB056274FE5E4006334C2 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82FB055274FE5E4006334C2 /* Place.swift */; };
 		B82FB058274FE6AB006334C2 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82FB057274FE6AB006334C2 /* PlaceViewModel.swift */; };
+		B82FB05D27501461006334C2 /* ExploreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82FB05C27501461006334C2 /* ExploreDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B82FB053274FD18B006334C2 /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
 		B82FB055274FE5E4006334C2 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B82FB057274FE6AB006334C2 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		B82FB05C27501461006334C2 /* ExploreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				482DB36C273C3C240037A995 /* WishListViewController.swift */,
 				482DB36E273C5E000037A995 /* InboxViewController.swift */,
 				B82FB051274FD119006334C2 /* ExploreViewController.swift */,
+				B82FB05C27501461006334C2 /* ExploreDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				482DB36F273C5E000037A995 /* InboxViewController.swift in Sources */,
 				B82FB058274FE6AB006334C2 /* PlaceViewModel.swift in Sources */,
 				B82FB052274FD119006334C2 /* ExploreViewController.swift in Sources */,
+				B82FB05D27501461006334C2 /* ExploreDetailViewController.swift in Sources */,
 				482DB35D273C2F520037A995 /* ViewController.swift in Sources */,
 				B82FB056274FE5E4006334C2 /* Place.swift in Sources */,
 				482DB36D273C3C240037A995 /* WishListViewController.swift in Sources */,
